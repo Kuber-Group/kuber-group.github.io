@@ -139,7 +139,10 @@ async function fetchRepos() {
     const container = document.getElementById("repoContainer");
     container.innerHTML = "";
 
-    const pagesRepos = repos.filter(repo => repo.has_pages);
+    const pagesRepos = repos.filter(repo => 
+        repo.has_pages && 
+        repo.name.toLowerCase() !== "kuber-group.github.io"
+    );
 
     if (pagesRepos.length === 0) {
         container.innerHTML = "<p>No GitHub Pages demos found.</p>";
@@ -165,3 +168,4 @@ fetchRepos();
 
 </body>
 </html>
+
