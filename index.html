@@ -1,171 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kuber Group | Client Demo Previews</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #0f172a;
-    color: white;
-}
-
-header {
-    padding: 25px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #0f172a;
-    border-bottom: 1px solid #1e293b;
-}
-
-header h1 {
-    color: #38bdf8;
-}
-
-.hero {
-    text-align: center;
-    padding: 120px 20px 60px;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    color: #94a3b8;
-}
-
-.section {
-    max-width: 1200px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-.section h3 {
-    margin-bottom: 40px;
-    color: #38bdf8;
-    text-align: center;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h4 {
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #94a3b8;
-    margin-bottom: 15px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 18px;
-    background: #38bdf8;
-    color: #0f172a;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #0ea5e9;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid #1e293b;
-    color: #94a3b8;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kuber Technologies - Custom software development with live working demos. Explore our production-quality systems and solutions.">
+    <title>Kuber Technologies | Custom Software Development & Live Demos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <span class="logo-accent">Kuber</span>
+                    <span class="logo-text">Technologies</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-cta">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<header>
-    <h1>Kuber Group</h1>
-    <nav>Client Demo Previews</nav>
-</header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Custom Software That<br>
+                    <span class="highlight">Actually Works</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We build production-ready systems with live demos you can test right now. 
+                    No mockups. No promises. Just working software.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Live Demos</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-<section class="hero">
-    <h2>Live Client Demonstrations</h2>
-    <p>Explore active demo previews powered by GitHub Pages.</p>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Who We Are</span>
+                <h2 class="section-title">Building Systems That Scale</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Kuber Technologies specializes in custom software development for businesses 
+                        that need more than off-the-shelf solutions.
+                    </p>
+                    <p>
+                        We create web applications, mobile apps, dashboards, and integrated systems 
+                        tailored to your exact requirements. Every project we showcase below is a 
+                        real, working system—not a concept or prototype.
+                    </p>
+                    <p>
+                        Our approach combines technical excellence with practical business understanding. 
+                        We don't just write code; we build tools that solve real problems and grow with your business.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Production-Ready</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Live</div>
+                        <div class="stat-label">Testable Demos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Custom</div>
+                        <div class="stat-label">Built Solutions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="section">
-    <h3>Available Demos</h3>
-    <div class="grid" id="repoContainer">
-        <p>Loading demos...</p>
-    </div>
-</section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Web Applications</h3>
+                    <p>Full-stack web applications built with modern frameworks. Responsive, scalable, and production-ready.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2"/>
+                            <line x1="12" y1="18" x2="12" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>Mobile Applications</h3>
+                    <p>Native and cross-platform mobile apps that deliver exceptional user experiences on any device.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 3v18"/>
+                            <path d="M3 9h18"/>
+                        </svg>
+                    </div>
+                    <h3>Admin Dashboards</h3>
+                    <p>Powerful administrative interfaces and data visualization tools for managing complex systems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>System Automation</h3>
+                    <p>Custom integrations and automation solutions that streamline workflows and reduce manual work.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>Custom Software Development</h3>
+                    <p>Bespoke software solutions designed specifically for your unique business requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 20h9"/>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                        </svg>
+                    </div>
+                    <h3>Technical Consulting</h3>
+                    <p>Expert guidance on architecture, technology selection, and development best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    © 2026 Kuber Group. Demo Portfolio Platform.
-</footer>
+    <!-- Projects Showcase Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Live Project Demos</h2>
+                <p class="section-description">
+                    Explore real, working systems. Every demo below is a fully functional application 
+                    you can test immediately—no sign-up required.
+                </p>
+            </div>
 
-<script>
-async function fetchRepos() {
-    const response = await fetch("https://api.github.com/orgs/Kuber-Group/repos");
-    const repos = await response.json();
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label>Project Type:</label>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all" data-type="category">All Projects</button>
+                        <button class="filter-btn" data-filter="Web App" data-type="category">Web Apps</button>
+                        <button class="filter-btn" data-filter="Dashboard" data-type="category">Dashboards</button>
+                        <button class="filter-btn" data-filter="Website" data-type="category">Websites</button>
+                        <button class="filter-btn" data-filter="Admin System" data-type="category">Admin Systems</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>Technology:</label>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all" data-type="tech">All Tech</button>
+                        <button class="filter-btn" data-filter="Angular" data-type="tech">Angular</button>
+                        <button class="filter-btn" data-filter="React" data-type="tech">React</button>
+                        <button class="filter-btn" data-filter="Vanilla JS" data-type="tech">Vanilla JS</button>
+                        <button class="filter-btn" data-filter=".NET" data-type="tech">.NET</button>
+                    </div>
+                </div>
+            </div>
 
-    const container = document.getElementById("repoContainer");
-    container.innerHTML = "";
+            <!-- GitHub Pages Auto-Generated Projects -->
+            <div class="github-section">
+                <h3 class="subsection-title">GitHub Pages Demos</h3>
+                <div id="repoContainer" class="projects-grid">
+                    <div class="loading-state">
+                        <div class="spinner"></div>
+                        <p>Loading projects from GitHub...</p>
+                    </div>
+                </div>
+            </div>
 
-    const pagesRepos = repos.filter(repo => 
-        repo.has_pages && 
-        repo.name.toLowerCase() !== "kuber-group.github.io"
-    );
+            <!-- Manual/Featured Projects -->
+            <div class="featured-section">
+                <h3 class="subsection-title">Featured Projects</h3>
+                <div id="projectsContainer" class="projects-grid">
+                    <!-- Projects loaded from projects.js -->
+                </div>
+            </div>
 
-    if (pagesRepos.length === 0) {
-        container.innerHTML = "<p>No GitHub Pages demos found.</p>";
-        return;
-    }
+            <div class="no-results" style="display: none;">
+                <p>No projects match your current filters. Try adjusting your selection.</p>
+            </div>
+        </div>
+    </section>
 
-    pagesRepos.forEach(repo => {
-        const demoUrl = `https://kuber-group.github.io/${repo.name}`;
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Kuber</span>
+                <h2 class="section-title">Quality You Can Verify</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Production-Ready Code</h3>
+                    <p>Every line of code we write is built for production. Clean, maintainable, and scalable architecture from day one.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Transparent Process</h3>
+                    <p>Test our work before you commit. All our demos are live and accessible so you can see exactly what you're getting.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Modern Technology</h3>
+                    <p>We use cutting-edge frameworks and best practices to ensure your software stays relevant and maintainable.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Scalable Solutions</h3>
+                    <p>Built to grow with your business. Our systems handle increasing users, data, and complexity without breaking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-            <h4>${repo.name}</h4>
-            <p>${repo.description || "Client demo preview project."}</p>
-            <a class="btn" href="${demoUrl}" target="_blank">View Demo</a>
-        `;
-        container.appendChild(card);
-    });
-}
+    <!-- Call to Action Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Something?</h2>
+                <p>Let's discuss your project. Schedule a consultation to explore how we can help bring your vision to life.</p>
+                <div class="cta-buttons">
+                    <a href="/cdn-cgi/l/email-protection#8fece0e1fbeeecfbcfe4faedeafdfbeaece7a1ece0e2" class="btn btn-primary">Request a Demo</a>
+                    <a href="/cdn-cgi/l/email-protection#f4979b9a80959780b49f819691868091979cda979b99" class="btn btn-secondary">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-fetchRepos();
-</script>
-
-</body>
-</html>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-accent">Kuber</span>
+                        <span class="logo-text">Technologies</span>
+                    </div>
+                    <p>Building production-ready software solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/Kuber-Group" target="_blank">GitHub</a></li>
+                            <li><a href="/cdn-cgi/l/email-protection#d7b4b8b9a3b6b4a397bca2b5b2a5a3b2b4bff9b4b8ba">Email</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kuber Technologies. All rights reserved.</p>
+         
