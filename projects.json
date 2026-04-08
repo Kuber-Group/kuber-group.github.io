@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "repoUrl": "https://github.com/kuber-group/greenforge",
+      "customPath": "/greenforge",
+      "displayName": "Greenforge",
+      "description": "Sustainable energy & resource planning toolkit",
+      "tech": ["TypeScript", "React", "Vite"],
+      "icon": "fas fa-globe"
+    },
+    {
+      "repoUrl": "https://github.com/kuber-group/branding-hub",
+      "customPath": "/branding-hub",
+      "displayName": "BrandingHub",
+      "description": "Branding & Printing Solutions That Make You Stand Out",
+      "tech": ["TypeScript", "React", "Vite"],
+      "icon": "fas fa-globe"
+    }
+  ]
+}

@@ -7,7 +7,7 @@
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -17,7 +17,7 @@
     }
 
     body {
-      background-color: #F5F0E8;  /* warm cream/beige from your palette */
+      background-color: #F5F0E8;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       color: #2C2C2C;
       line-height: 1.4;
@@ -29,16 +29,7 @@
       padding: 0 2rem;
     }
 
-    /* Color palette from image:
-       - Deep navy/blue: #1A2A4F (used for primary accents)
-       - Terracotta/rust: #C46B3F (used for highlights)
-       - Olive green: #6B7B3F (secondary accent)
-       - Soft cream: #F5F0E8 (background)
-       - Warm gray: #4A4A4A (text)
-       - Sand/tan: #D4C4A8 (borders/cards)
-    */
-
-    /* navbar */
+    /* Color palette: Deep Navy #1A2A4F, Terracotta #C46B3F, Olive #6B7B3F, Cream #F5F0E8, Sand #D4C4A8 */
     .navbar {
       padding: 1.75rem 0 1rem 0;
       border-bottom: 1px solid #D4C4A8;
@@ -68,16 +59,16 @@
       font-weight: 800;
       font-size: 1.7rem;
       letter-spacing: -0.02em;
-      color: #1A2A4F;  /* deep navy */
+      color: #1A2A4F;
     }
 
     .badge {
-      background: #C46B3F20;  /* terracotta with transparency */
+      background: #C46B3F20;
       padding: 0.2rem 0.7rem;
       border-radius: 40px;
       font-size: 0.75rem;
       font-weight: 600;
-      color: #C46B3F;  /* terracotta */
+      color: #C46B3F;
       border: 1px solid #C46B3F30;
     }
 
@@ -99,7 +90,7 @@
       color: #C46B3F;
     }
 
-    .btn-outline-light {
+    .btn-outline {
       border: 1px solid #D4C4A8;
       padding: 0.4rem 1rem;
       border-radius: 40px;
@@ -108,39 +99,38 @@
       transition: all 0.2s;
     }
 
-    .btn-outline-light:hover {
+    .btn-outline:hover {
       border-color: #C46B3F;
       background: #FFF8F0;
     }
 
-    /* hero section */
     .hero {
-      padding: 4rem 0 3rem 0;
+      padding: 3rem 0 2rem 0;
       text-align: center;
     }
 
     .hero h1 {
-      font-size: 3.2rem;
+      font-size: 3rem;
       font-weight: 800;
       letter-spacing: -0.02em;
-      color: #1A2A4F;  /* deep navy */
+      color: #1A2A4F;
       margin-bottom: 1rem;
     }
 
     .hero h1 span {
-      color: #C46B3F;  /* terracotta accent */
+      color: #C46B3F;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      color: #6B7B3F;  /* olive green for secondary text */
-      max-width: 680px;
+      font-size: 1.1rem;
+      color: #6B7B3F;
+      max-width: 650px;
       margin: 0 auto;
       line-height: 1.5;
     }
 
     .hero-meta {
-      margin-top: 1.8rem;
+      margin-top: 1.5rem;
       display: flex;
       justify-content: center;
       gap: 1rem;
@@ -150,36 +140,71 @@
     .pill {
       background: white;
       border-radius: 60px;
-      padding: 0.4rem 1.2rem;
-      font-size: 0.85rem;
+      padding: 0.3rem 1rem;
+      font-size: 0.8rem;
       font-weight: 500;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
       border: 1px solid #D4C4A8;
       color: #1A2A4F;
     }
 
-    .pill i {
-      color: #C46B3F;
-      margin-right: 0.3rem;
-    }
-
-    /* section title */
     .section-title {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 700;
-      margin: 2.5rem 0 1.2rem 0;
-      letter-spacing: -0.01em;
-      border-left: 4px solid #C46B3F;  /* terracotta border */
+      margin: 2rem 0 1.2rem 0;
+      border-left: 4px solid #C46B3F;
       padding-left: 1rem;
       color: #1A2A4F;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
-    /* showcase grid */
+    /* JSON info bar */
+    .json-info {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 0.8rem 1.2rem;
+      margin: 0.5rem 0 1rem 0;
+      border: 1px solid #D4C4A8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+    }
+
+    .json-info code {
+      background: #F5F0E8;
+      padding: 0.2rem 0.6rem;
+      border-radius: 30px;
+      color: #C46B3F;
+      font-family: monospace;
+    }
+
+    .btn-small {
+      background: transparent;
+      border: 1px solid #D4C4A8;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-small:hover {
+      border-color: #C46B3F;
+      background: #FFF8F0;
+    }
+
     .showcase-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
       gap: 2rem;
-      margin: 2rem 0 3rem;
+      margin: 1.5rem 0 3rem;
     }
 
     .project-card {
@@ -199,7 +224,7 @@
 
     .card-img {
       background: linear-gradient(135deg, #1A2A4F 0%, #2A3E6B 100%);
-      height: 160px;
+      height: 140px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -207,19 +232,19 @@
     }
 
     .card-img i {
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: #F5F0E8;
       opacity: 0.9;
     }
 
     .card-content {
-      padding: 1.5rem 1.5rem 1.8rem;
+      padding: 1.3rem 1.3rem 1.5rem;
     }
 
     .card-title {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -228,28 +253,28 @@
 
     .card-title i {
       color: #C46B3F;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     .card-desc {
-      color: #6B7B3F;  /* olive green for description */
-      font-size: 0.9rem;
-      margin: 0.6rem 0 1rem;
-      line-height: 1.5;
+      color: #6B7B3F;
+      font-size: 0.85rem;
+      margin: 0.5rem 0 0.8rem;
+      line-height: 1.45;
     }
 
     .tech-stack {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 1.4rem;
+      gap: 6px;
+      margin-bottom: 1rem;
     }
 
     .tech {
       background: #F5F0E8;
       border-radius: 30px;
-      padding: 0.2rem 0.8rem;
-      font-size: 0.7rem;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.65rem;
       font-weight: 600;
       color: #1A2A4F;
       border: 1px solid #D4C4A8;
@@ -257,10 +282,10 @@
 
     .card-links {
       display: flex;
-      gap: 1.2rem;
+      gap: 1rem;
       align-items: center;
       border-top: 1px solid #D4C4A8;
-      padding-top: 1rem;
+      padding-top: 0.8rem;
       margin-top: 0.2rem;
       flex-wrap: wrap;
     }
@@ -268,10 +293,10 @@
     .card-links a {
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       color: #1A2A4F;
       transition: color 0.2s;
     }
@@ -281,7 +306,7 @@
     }
 
     .live-badge {
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       background: #6B7B3F20;
       padding: 0.2rem 0.6rem;
       border-radius: 40px;
@@ -289,51 +314,41 @@
       font-weight: 500;
     }
 
-    /* footer */
+    .loading-state, .error-state {
+      text-align: center;
+      padding: 3rem;
+      background: #FFFFFF;
+      border-radius: 24px;
+      border: 1px dashed #D4C4A8;
+      margin: 2rem 0;
+    }
+
+    .loading-state i, .error-state i {
+      font-size: 2rem;
+      color: #C46B3F;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
     .footer {
-      margin-top: 5rem;
-      padding: 2.5rem 0 3rem;
+      margin-top: 4rem;
+      padding: 2rem 0 2.5rem;
       border-top: 1px solid #D4C4A8;
       text-align: center;
       color: #6B7B3F;
-      font-size: 0.85rem;
-    }
-
-    .footer a {
-      color: #C46B3F;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .footer a:hover {
-      color: #1A2A4F;
-    }
-
-    /* loading & status */
-    .loading-state {
-      text-align: center;
-      padding: 3rem;
-      color: #6B7B3F;
-    }
-
-    .error-state {
-      text-align: center;
-      padding: 2rem;
-      background: #FFF5F0;
-      border-radius: 20px;
-      border-left: 4px solid #C46B3F;
-      color: #4A4A4A;
+      font-size: 0.8rem;
     }
 
     @media (max-width: 720px) {
       .container {
-        padding: 0 1.5rem;
+        padding: 0 1.2rem;
       }
       .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
-      .showcase-grid {
-        grid-template-columns: 1fr;
+      .json-info {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
@@ -342,13 +357,13 @@
 
 <nav class="navbar">
   <div class="container nav-inner">
-    <div class="logo-area">
+    <div class="flogo-area">
       <span class="logo">Kuber</span>
-      <span class="badge">Preview · GitHub Pages</span>
+      <span class="badge">Preview Hub · GitHub Pages</span>
     </div>
     <div class="nav-links">
       <a href="https://kuber.co.zw" target="_blank">kuber.co.zw</a>
-      <a href="https://github.com/kuber-group" target="_blank" class="btn-outline-light"><i class="fab fa-github"></i> kuber-group</a>
+      <a href="#" id="refreshBtn" class="btn-outline"><i class="fas fa-sync-alt"></i> Refresh data</a>
     </div>
   </div>
 </nav>
@@ -360,18 +375,29 @@
       <p>Live websites & demos from Kuber Group — served via GitHub Pages on <strong>preview.kuber.co.zw</strong></p>
       <div class="hero-meta">
         <span class="pill"><i class="fab fa-github"></i> kuber-group</span>
-        <span class="pill"><i class="fas fa-code-branch"></i> 6+ repositories</span>
+        <!-- <span class="pill"><i class="fas fa-database"></i> projects.json</span> -->
         <span class="pill"><i class="fas fa-globe"></i> Custom domain</span>
       </div>
     </div>
 
+    <!-- JSON file info bar -->
+    <!-- <div class="json-info">
+      <div>
+        <i class="fas fa-file-code" style="color: #C46B3F; margin-right: 8px;"></i>
+        Projects loaded from <code>projects.json</code> — edit this file to add, remove, or update projects.
+      </div>
+      <button class="btn-small" id="viewJsonBtn"><i class="fas fa-eye"></i> View JSON schema</button>
+    </div> -->
+
     <div class="section-title">
-      <i class="fas fa-rocket" style="margin-right: 10px; color: #C46B3F;"></i> Active previews
+      <span><i class="fas fa-th-large" style="margin-right: 10px; color: #C46B3F;"></i> Showcased projects</span>
+      <span style="font-size: 0.8rem; font-weight: normal;" id="projectCount"></span>
     </div>
     
     <div id="projectsGrid" class="showcase-grid">
       <div class="loading-state">
-        <i class="fas fa-spinner fa-pulse"></i> Loading projects from GitHub...
+        <i class="fas fa-spinner fa-pulse"></i>
+        <p>Loading projects from projects.json...</p>
       </div>
     </div>
   </div>
@@ -379,166 +405,168 @@
 
 <footer class="footer">
   <div class="container">
-    <p>Designed with <i class="fas fa-heart" style="color: #C46B3F;"></i> — Kuber Group color palette</p>
-    <p style="margin-top: 0.7rem;">© 2025 Kuber Group · Preview environment for GitHub Pages sites · <a href="https://github.com/kuber-group" target="_blank">View organization on GitHub</a></p>
+    <p>Design language · Kuber Group — <strong>#1A2A4F · #C46B3F · #6B7B3F · #F5F0E8</strong></p>
+    <p style="margin-top: 0.5rem;">© 2025 · Preview environment · Data source: <strong>projects.json</strong> (place in same directory as this page)</p>
   </div>
 </footer>
 
 <script>
-  // GitHub organization
-  const GITHUB_ORG = 'kuber-group';
+  // --------------------------------------------------------------
+  // PROJECTS FETCHED FROM EXTERNAL JSON FILE: projects.json
+  // The JSON file should be placed in the same directory as this HTML.
+  // Format example:
+  // {
+  //   "projects": [
+  //     {
+  //       "repoUrl": "https://github.com/kuber-group/greenforge",
+  //       "customPath": "/greenforge",
+  //       "displayName": "Greenforge",
+  //       "description": "Sustainable energy toolkit",
+  //       "tech": ["TypeScript", "React", "Vite"],
+  //       "icon": "fas fa-leaf"
+  //     }
+  //   ]
+  // }
+  // --------------------------------------------------------------
+  
   const PREVIEW_DOMAIN = 'preview.kuber.co.zw';
-
-  // Map repository names to their preview subpath and metadata
-  // This mapping defines which repos have GitHub Pages enabled and their custom URLs
-  const repoConfig = {
-    'greenforge': {
-      displayName: 'Greenforge',
-      description: 'Sustainable energy & resource planning toolkit — TypeScript based web application for environmental impact assessment.',
-      tech: ['TypeScript', 'React', 'Vite', 'Tailwind'],
-      icon: 'fas fa-leaf',
-      previewPath: '/greenforge'
-    },
-    'MediaInator': {
-      displayName: 'MediaInator',
-      description: 'Media processing & transformation dashboard for automated content workflows and format conversion.',
-      tech: ['TypeScript', 'Node.js', 'FFmpeg', 'Express'],
-      icon: 'fas fa-photo-video',
-      previewPath: '/mediainator'
-    },
-    'branding-hub': {
-      displayName: 'Branding Hub',
-      description: 'Centralized brand asset manager with style guide generator and design system documentation.',
-      tech: ['TypeScript', 'Next.js', 'Tailwind', 'Figma API'],
-      icon: 'fas fa-palette',
-      previewPath: '/branding-hub'
-    },
-    'Jackal': {
-      displayName: 'Jackal POS',
-      description: 'Multi-tenant point-of-sale system for retail, restaurants, and hospitality businesses.',
-      tech: ['C#', 'Blazor', 'PostgreSQL', 'Docker'],
-      icon: 'fas fa-cash-register',
-      previewPath: '/jackal-pos'
-    },
-    'pfuma': {
-      displayName: 'Pfuma',
-      description: 'Financial tracking and analytics platform for SMBs with real-time reporting and insights.',
-      tech: ['C#', '.NET', 'Angular', 'MongoDB'],
-      icon: 'fas fa-chart-line',
-      previewPath: '/pfuma'
-    },
-    'kuber-group.github.io': {
-      displayName: 'Kuber Group Hub',
-      description: 'Organization landing page, documentation hub, and company showcase.',
-      tech: ['HTML5', 'CSS3', 'JavaScript', 'GitHub Pages'],
-      icon: 'fas fa-building',
-      previewPath: ''  // root of the preview domain
-    }
-  };
-
-  // Fallback descriptions for any repos not in config
-  function getRepoConfig(repoName) {
-    if (repoConfig[repoName]) {
-      return repoConfig[repoName];
-    }
-    // Generate a default config for unknown repos
-    return {
-      displayName: repoName.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
-      description: `GitHub Pages site from ${repoName} — part of Kuber Group's digital ecosystem.`,
-      tech: ['HTML/CSS', 'JavaScript', 'GitHub Pages'],
-      icon: 'fas fa-code',
-      previewPath: `/${repoName}`
-    };
+  const PROJECTS_JSON_PATH = 'projects.json';
+  
+  let projects = [];
+  
+  // Helper: extract repo name from GitHub URL (for fallback preview URL)
+  function extractRepoName(githubUrl) {
+    try {
+      let url = githubUrl.trim();
+      if (!url.includes('github.com')) return null;
+      url = url.replace(/\.git$/, '');
+      const parts = url.split('/');
+      const repoName = parts[parts.length - 1];
+      return repoName || null;
+    } catch(e) { return null; }
   }
-
-  async function fetchRepositories() {
+  
+  // Generate preview URL from project data
+  function generatePreviewUrl(project) {
+    if (project.customPath && project.customPath.trim() !== '') {
+      let path = project.customPath.trim();
+      if (!path.startsWith('/')) path = '/' + path;
+      return `https://${PREVIEW_DOMAIN}${path}`;
+    } else if (project.repoUrl) {
+      const repoName = extractRepoName(project.repoUrl);
+      const slug = repoName || project.displayName?.toLowerCase().replace(/\s+/g, '-') || 'project';
+      return `https://${PREVIEW_DOMAIN}/${encodeURIComponent(slug)}`;
+    } else {
+      return `https://${PREVIEW_DOMAIN}/${encodeURIComponent(project.displayName?.toLowerCase().replace(/\s+/g, '-') || 'project')}`;
+    }
+  }
+  
+  // Fetch projects from projects.json
+  async function fetchProjects() {
     const grid = document.getElementById('projectsGrid');
+    const projectCountSpan = document.getElementById('projectCount');
+    
+    // Show loading state
+    grid.innerHTML = `<div class="loading-state">
+      <i class="fas fa-spinner fa-pulse"></i>
+      <p>Fetching projects from <strong>projects.json</strong>...</p>
+    </div>`;
     
     try {
-      // Fetch repositories from GitHub API
-      const response = await fetch(`https://api.github.com/orgs/${GITHUB_ORG}/repos?per_page=50&sort=updated`);
+      // Add cache-busting parameter to avoid stale data
+      const response = await fetch(`${PROJECTS_JSON_PATH}?t=${Date.now()}`);
       
       if (!response.ok) {
-        throw new Error(`GitHub API error: ${response.status}`);
+        throw new Error(`HTTP ${response.status}: Could not load projects.json. Make sure the file exists in the same directory.`);
       }
       
-      const repos = await response.json();
+      const data = await response.json();
       
-      if (!repos || repos.length === 0) {
-        grid.innerHTML = `<div class="error-state"><i class="fas fa-exclamation-triangle"></i> No repositories found for ${GITHUB_ORG}</div>`;
+      // Support both { projects: [...] } and direct array format
+      let projectsArray = null;
+      if (Array.isArray(data)) {
+        projectsArray = data;
+      } else if (data.projects && Array.isArray(data.projects)) {
+        projectsArray = data.projects;
+      } else {
+        throw new Error('Invalid JSON format. Expected an array or object with "projects" array.');
+      }
+      
+      projects = projectsArray;
+      
+      if (projects.length === 0) {
+        grid.innerHTML = `<div class="error-state">
+          <i class="fas fa-info-circle"></i>
+          <p>No projects found in projects.json. Add some projects to the array.</p>
+          <div style="margin-top: 1rem; font-size: 0.8rem; color: #6B7B3F;">
+            <code>projects.json</code> should contain an array of project objects.
+          </div>
+        </div>`;
+        if (projectCountSpan) projectCountSpan.textContent = '(0 projects)';
         return;
       }
       
-      // Filter to show all repos (you could filter for ones with GitHub Pages enabled)
-      // For now, show all repos from the organization
-      renderProjects(repos, grid);
+      // Validate and normalize each project
+      projects = projects.map((proj, idx) => {
+        return {
+          id: proj.id || `proj_${idx}_${Date.now()}`,
+          repoUrl: proj.repoUrl || '',
+          customPath: proj.customPath || '',
+          displayName: proj.displayName || (proj.repoUrl ? extractRepoName(proj.repoUrl) : `Project ${idx + 1}`) || 'Unnamed Project',
+          description: proj.description || 'GitHub Pages website from Kuber Group showcase.',
+          tech: proj.tech || ['HTML/CSS', 'JavaScript', 'GitHub Pages'],
+          icon: proj.icon || 'fas fa-code',
+          githubOwner: proj.githubOwner || null
+        };
+      });
+      
+      if (projectCountSpan) {
+        projectCountSpan.textContent = `(${projects.length} project${projects.length !== 1 ? 's' : ''})`;
+      }
+      
+      renderProjects();
       
     } catch (error) {
-      console.error('Error fetching from GitHub:', error);
-      grid.innerHTML = `
-        <div class="error-state">
-          <i class="fas fa-cloud-download-alt"></i><br><br>
-          <strong>Unable to fetch from GitHub API</strong><br>
-          ${error.message}<br><br>
-          <small>Showing fallback project data. The API may be rate-limited. Try again later.</small>
+      console.error('Error loading projects.json:', error);
+      grid.innerHTML = `<div class="error-state">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p><strong>Failed to load projects.json</strong></p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">${error.message}</p>
+        <div style="margin-top: 1rem; background: #F5F0E8; padding: 1rem; border-radius: 16px; text-align: left;">
+          <p style="font-weight: 600; margin-bottom: 0.5rem;">📁 How to set up:</p>
+          <ol style="margin-left: 1.5rem; font-size: 0.8rem; line-height: 1.6;">
+            <li>Create a file named <code>projects.json</code> in the same folder as this HTML page</li>
+            <li>Add your projects using the format below</li>
+          </ol>
+          <pre style="background: #1A2A4F; color: #F5F0E8; padding: 0.8rem; border-radius: 12px; margin-top: 0.8rem; font-size: 0.7rem; overflow-x: auto;">{
+  "projects": [
+    {
+      "repoUrl": "https://github.com/kuber-group/greenforge",
+      "customPath": "/greenforge",
+      "displayName": "Greenforge",
+      "description": "Sustainable energy & resource planning toolkit",
+      "tech": ["TypeScript", "React", "Vite"],
+      "icon": "fas fa-leaf"
+    }
+  ]
+}</pre>
         </div>
-      `;
-      // Fallback: render from local config
-      renderFallbackProjects(grid);
+      </div>`;
+      if (projectCountSpan) projectCountSpan.textContent = '(error loading)';
     }
   }
-
-  function renderProjects(repos, grid) {
+  
+  // Render all project cards
+  function renderProjects() {
+    const grid = document.getElementById('projectsGrid');
+    if (!grid) return;
+    
     grid.innerHTML = '';
     
-    for (const repo of repos) {
-      const config = getRepoConfig(repo.name);
-      const previewUrl = config.previewPath 
-        ? `https://${PREVIEW_DOMAIN}${config.previewPath}`
-        : `https://${repo.name}.${PREVIEW_DOMAIN}`;
-      
-      const repoUrl = repo.html_url;
-      const updatedDate = new Date(repo.updated_at).toLocaleDateString();
-      
-      const techBadges = config.tech.map(t => `<span class="tech">${escapeHtml(t)}</span>`).join('');
-      
-      const card = document.createElement('div');
-      card.className = 'project-card';
-      card.innerHTML = `
-        <div class="card-img">
-          <i class="${config.icon}"></i>
-        </div>
-        <div class="card-content">
-          <div class="card-title">
-            <i class="${config.icon}"></i> ${escapeHtml(config.displayName)}
-          </div>
-          <div class="card-desc">${escapeHtml(config.description)}</div>
-          <div class="tech-stack">${techBadges}</div>
-          <div class="card-links">
-            <a href="${previewUrl}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live preview</a>
-            <a href="${repoUrl}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Repository</a>
-            <span class="live-badge"><i class="fas fa-check-circle"></i> Updated ${updatedDate}</span>
-          </div>
-        </div>
-      `;
-      grid.appendChild(card);
-    }
-  }
-
-  function renderFallbackProjects(grid) {
-    grid.innerHTML = '';
-    
-    const fallbackProjects = [
-      { name: 'greenforge', display: 'Greenforge', desc: 'Sustainable energy & resource planning toolkit', tech: ['TypeScript', 'React'], icon: 'fas fa-leaf', path: '/greenforge' },
-      { name: 'MediaInator', display: 'MediaInator', desc: 'Media processing & transformation dashboard', tech: ['TypeScript', 'Node.js'], icon: 'fas fa-photo-video', path: '/mediainator' },
-      { name: 'branding-hub', display: 'Branding Hub', desc: 'Centralized brand asset manager', tech: ['TypeScript', 'Next.js'], icon: 'fas fa-palette', path: '/branding-hub' },
-      { name: 'Jackal', display: 'Jackal POS', desc: 'Multi-tenant point-of-sale system', tech: ['C#', 'Blazor'], icon: 'fas fa-cash-register', path: '/jackal-pos' },
-      { name: 'pfuma', display: 'Pfuma', desc: 'Financial tracking and analytics platform', tech: ['C#', '.NET'], icon: 'fas fa-chart-line', path: '/pfuma' }
-    ];
-    
-    for (const proj of fallbackProjects) {
-      const previewUrl = `https://${PREVIEW_DOMAIN}${proj.path}`;
-      const techBadges = proj.tech.map(t => `<span class="tech">${escapeHtml(t)}</span>`).join('');
+    projects.forEach(proj => {
+      const previewUrl = generatePreviewUrl(proj);
+      const repoUrlFormatted = proj.repoUrl || '#';
+      const techBadges = (proj.tech || []).map(t => `<span class="tech">${escapeHtml(t)}</span>`).join('');
       
       const card = document.createElement('div');
       card.className = 'project-card';
@@ -548,21 +576,99 @@
         </div>
         <div class="card-content">
           <div class="card-title">
-            <i class="${proj.icon}"></i> ${escapeHtml(proj.display)}
+            <i class="${proj.icon}"></i> ${escapeHtml(proj.displayName)}
           </div>
-          <div class="card-desc">${escapeHtml(proj.desc)} — part of Kuber Group's GitHub Pages showcase.</div>
-          <div class="tech-stack">${techBadges}</div>
+          <div class="card-desc">${escapeHtml(proj.description)}</div>
+          <div class="tech-stack">${techBadges || '<span class="tech">GitHub Pages</span>'}</div>
           <div class="card-links">
             <a href="${previewUrl}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live preview</a>
-            <a href="https://github.com/kuber-group/${proj.name}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Repository</a>
-            <span class="live-badge"><i class="fas fa-globe"></i> GitHub Pages</span>
+            ${proj.repoUrl ? `<a href="${escapeHtml(proj.repoUrl)}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Repository</a>` : ''}
+            <span class="live-badge"><i class="fas fa-check-circle"></i> GitHub Pages</span>
           </div>
+          <div style="font-size: 0.65rem; margin-top: 0.6rem; color:#A0A090;"><i class="fas fa-map-marker-alt"></i> ${escapeHtml(previewUrl)}</div>
         </div>
       `;
       grid.appendChild(card);
-    }
+    });
   }
-
+  
+  // Helper: show JSON schema modal / alert with example
+  function showJsonSchema() {
+    const example = `{
+  "projects": [
+    {
+      "repoUrl": "https://github.com/kuber-group/greenforge",
+      "customPath": "/greenforge",
+      "displayName": "Greenforge",
+      "description": "Sustainable energy & resource planning toolkit",
+      "tech": ["TypeScript", "React", "Vite"],
+      "icon": "fas fa-leaf"
+    },
+    {
+      "repoUrl": "https://github.com/kuber-group/MediaInator",
+      "customPath": "/mediainator",
+      "displayName": "MediaInator",
+      "description": "Media processing & transformation dashboard",
+      "tech": ["TypeScript", "Node.js", "FFmpeg"],
+      "icon": "fas fa-photo-video"
+    }
+  ]
+}`;
+    
+    // Create a modal-like alert with copyable text
+    const modal = document.createElement('div');
+    modal.style.position = 'fixed';
+    modal.style.top = '0';
+    modal.style.left = '0';
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.backgroundColor = 'rgba(0,0,0,0.5)';
+    modal.style.display = 'flex';
+    modal.style.alignItems = 'center';
+    modal.style.justifyContent = 'center';
+    modal.style.zIndex = '1000';
+    modal.style.backdropFilter = 'blur(4px)';
+    
+    const modalContent = document.createElement('div');
+    modalContent.style.backgroundColor = '#FFFFFF';
+    modalContent.style.borderRadius = '24px';
+    modalContent.style.maxWidth = '600px';
+    modalContent.style.width = '90%';
+    modalContent.style.maxHeight = '80vh';
+    modalContent.style.overflow = 'auto';
+    modalContent.style.padding = '1.5rem';
+    modalContent.style.border = '1px solid #D4C4A8';
+    modalContent.style.boxShadow = '0 20px 40px rgba(0,0,0,0.2)';
+    
+    modalContent.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3 style="color: #1A2A4F;"><i class="fas fa-file-code"></i> projects.json schema</h3>
+        <button id="closeModalBtn" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #C46B3F;">&times;</button>
+      </div>
+      <p style="margin-bottom: 1rem; color: #6B7B3F;">Create a file named <code>projects.json</code> in the same directory with this structure:</p>
+      <pre style="background: #1A2A4F; color: #F5F0E8; padding: 1rem; border-radius: 16px; overflow-x: auto; font-size: 0.7rem; line-height: 1.4;">${escapeHtml(example)}</pre>
+      <p style="margin-top: 1rem; font-size: 0.75rem; color: #6B7B3F;">
+        <i class="fas fa-info-circle"></i> The preview URL will be: https://preview.kuber.co.zw/[customPath or repo-name]
+      </p>
+      <button id="copyExampleBtn" style="margin-top: 1rem; background: #C46B3F; color: white; border: none; padding: 0.5rem 1rem; border-radius: 40px; cursor: pointer; width: 100%;">Copy example JSON</button>
+    `;
+    
+    modal.appendChild(modalContent);
+    document.body.appendChild(modal);
+    
+    const closeBtn = modalContent.querySelector('#closeModalBtn');
+    const copyBtn = modalContent.querySelector('#copyExampleBtn');
+    
+    closeBtn.addEventListener('click', () => modal.remove());
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(example).then(() => {
+        copyBtn.textContent = '✓ Copied!';
+        setTimeout(() => { copyBtn.textContent = 'Copy example JSON'; }, 2000);
+      });
+    });
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
+  }
+  
   function escapeHtml(str) {
     if (!str) return '';
     return str.replace(/[&<>]/g, function(m) {
@@ -572,10 +678,21 @@
       return m;
     });
   }
-
-  // Initialize
+  
+  // Refresh data
+  function refreshData() {
+    fetchProjects();
+  }
+  
+  // Event listeners
   document.addEventListener('DOMContentLoaded', () => {
-    fetchRepositories();
+    fetchProjects();
+    
+    const refreshBtn = document.getElementById('refreshBtn');
+    const viewJsonBtn = document.getElementById('viewJsonBtn');
+    
+    if (refreshBtn) refreshBtn.addEventListener('click', refreshData);
+    if (viewJsonBtn) viewJsonBtn.addEventListener('click', showJsonSchema);
   });
 </script>
 </body>
